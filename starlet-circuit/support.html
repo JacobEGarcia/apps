@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Starlet Circuit Support</title>
+  <style>
+    :root { color-scheme:dark; --void:#080719; --panel:#14112f; --ink:#f8f5ff; --muted:#beb7d7; --pink:#ff4f9d; --cyan:#39d9ff; --line:#3b3464; }
+    * { box-sizing:border-box; }
+    body { margin:0; background:radial-gradient(circle at top right,#31165c,var(--void) 46%); color:var(--ink); font:16px/1.65 system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif; }
+    main { width:min(760px,calc(100% - 32px)); margin:auto; padding:56px 0 72px; }
+    .eyebrow { color:var(--cyan); font-size:.78rem; font-weight:900; letter-spacing:.16em; text-transform:uppercase; }
+    h1 { margin:.35rem 0 .5rem; font-size:clamp(2.6rem,9vw,5.5rem); line-height:.9; letter-spacing:-.06em; }
+    p { color:var(--muted); } strong { color:var(--ink); }
+    .notice { margin:1.5rem 0; padding:18px; border:2px solid var(--pink); background:#28102b; color:var(--ink); }
+    details { margin:12px 0; padding:18px 20px; border:1px solid var(--line); background:rgba(20,17,47,.88); }
+    summary { cursor:pointer; font-weight:850; } details[open] { border-color:var(--cyan); }
+    footer { margin-top:32px; padding-top:18px; border-top:1px solid var(--line); color:var(--muted); font-size:.88rem; overflow-wrap:anywhere; }
+    code { overflow-wrap:anywhere; }
+  </style>
+</head>
+<body>
+<main>
+  <div class="eyebrow">Starlet Circuit · Support</div>
+  <h1>Cross the skyline.</h1>
+  <p>Help with racing, drift and boost controls, the garage, randomized unlocks, local recovery, export, reset, and erase.</p>
+
+  <div class="notice"><strong>Deployment blocker:</strong> this page is not live. Required URL: <code>https://REPLACE-WITH-LIVE-DOMAIN.example/starlet-circuit/support.html</code>.</div>
+
+  <details open>
+    <summary>How do the race controls work?</summary>
+    <p>Tap left, right, or boost for a short pulse, or press and hold for continuous input. Steering at speed charges drift. Tap the prism item when it lights up. Use Pause to resume, restart, or exit.</p>
+  </details>
+
+  <details>
+    <summary>What happens if I leave the app during a race?</summary>
+    <p>The race pauses when Starlet Circuit is no longer active. Steering and boost input are cleared. Return to the app and choose Resume, Restart Race, or Exit to Lobby.</p>
+  </details>
+
+  <details>
+    <summary>How do racer unlock odds work?</summary>
+    <p>The displayed rarity odds are S+ 8%, S 26%, and A 66%. An unlock uses one local ticket or 1,000 local coins. A duplicate returns 800 coins for S+, 450 for S, or 250 for A.</p>
+  </details>
+
+  <details>
+    <summary>Can I buy coins, tickets, racers, or prizes?</summary>
+    <p>No. There are no purchases, in-app purchases, ads, prizes, trading, cash value, or cash-out. The app begins with a local starter balance and completed races award local coins and XP.</p>
+  </details>
+
+  <details>
+    <summary>Why are changes blocked?</summary>
+    <p>The primary progress snapshot could not be decoded and no valid backup was available. Starlet Circuit preserves the uncertain bytes and shows starter progress read-only. Use Erase All Data only if you intend to discard all primary, backup, recovery, and legacy local data.</p>
+  </details>
+
+  <details>
+    <summary>What does Export Progress JSON include?</summary>
+    <p>It is a full copy of current coins, tickets, XP, unlocked racers, selected racer, tune levels, and schema version. You choose its destination through iOS. Review the file before sharing it.</p>
+  </details>
+
+  <details>
+    <summary>What is the difference between Reset and Erase?</summary>
+    <p>When storage is writable, Reset Progress starts fresh active progress, but the prior primary can remain as a local rolling backup. Erase All Data removes primary, backup, recovery, and legacy keys before restoring fresh progress.</p>
+  </details>
+
+  <details>
+    <summary>Does Starlet Circuit have sound?</summary>
+    <p>No. Version 1.0 has no audio. Haptics provide optional local feedback, and the race remains playable without them.</p>
+  </details>
+
+  <details>
+    <summary>How can I contact support?</summary>
+    <p>Support email: <strong>[MONITORED SUPPORT EMAIL TO COMPLETE]</strong></p>
+  </details>
+
+  <footer>Public deployment has not occurred. Hard-blocking placeholder: https://REPLACE-WITH-LIVE-DOMAIN.example/starlet-circuit/support.html</footer>
+</main>
+</body>
+</html>
