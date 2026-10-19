@@ -3,7 +3,7 @@
 <pre id="s" style="font:14px monospace;color:#0f0;max-width:90%;white-space:pre-wrap;margin-top:30px"></pre>
 <button id="b" style="font-size:36px;padding:20px 40px;margin-top:20px">COPY SCRIPT</button>
 <script>
-const T = `; cd $HOME/appstore-prep && for app in NextRole Promethea FieldKit; do echo === $app ===; git -C $app push -u origin HEAD:main 2>&1 || echo PUSH_FAILED_$app; done > pushlog.txt 2>&1; open -a TextEdit pushlog.txt`;
+const T = `cd $HOME/appstore-prep && for app in NextRole Promethea FieldKit; do echo === $app ===; git -C $app push -u origin HEAD:main 2>&1 || echo PUSH_FAILED_$app; done > pushlog.txt 2>&1; open -a TextEdit pushlog.txt`;
 document.getElementById('s').textContent = T;
 document.getElementById('b').onclick = async e => {
   try { await navigator.clipboard.writeText(T); e.target.textContent='COPIED'; }
