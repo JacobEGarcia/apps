@@ -5,6 +5,6 @@ h1{color:#fff;font-family:-apple-system,sans-serif;text-decoration:underline}
 #s{width:80%;word-wrap:break-word;font-size:14px;margin:20px}
 button{font-size:28px;padding:14px 28px;background:#fff;border:none;cursor:pointer}</style></head>
 <body><h1>OPEN SHORTCUTS</h1>
-<div id="s">cd $HOME/appstore-prep || exit 1; for app in NextRole Promethea FieldKit; do echo "== $app =="; git -C $app push -u origin HEAD:main 2>&amp;1 || echo "PUSH_FAILED_$app"; done &gt; pushlog.txt 2&gt;&amp;1; open -a TextEdit pushlog.txt</div>
+<div id="s">cd $HOME/appstore-prep || exit 1; for app in NextRole Promethea FieldKit; do echo "== $app =="; git -C $app remote remove origin; git -C $app remote add origin "https://github.com/JacobEGarcia/$app.git"; git -C $app push -u origin HEAD:main 2>&amp;1 || echo "PUSH_FAILED_$app"; done &gt; pushlog.txt 2&gt;&amp;1; open -a TextEdit pushlog.txt</div>
 <button id="b" onclick="navigator.clipboard.writeText(document.getElementById('s').textContent).then(()=>{document.getElementById('b').textContent='COPIED'})">COPY SCRIPT</button>
 </body></html>
