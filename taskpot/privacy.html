@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>TASKPOT Privacy Policy</title>
+  <style>
+    :root { color-scheme: dark; --bg:#071b18; --panel:#102923; --ink:#fff8df; --muted:#b9c9bf; --mango:#ffc84a; --coral:#ff7058; --line:#315249; }
+    * { box-sizing: border-box; }
+    body { margin:0; background:radial-gradient(circle at top,#164b3d 0,#071b18 48rem); color:var(--ink); font:16px/1.65 system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif; }
+    main { width:min(760px,calc(100% - 32px)); margin:0 auto; padding:56px 0 72px; }
+    .eyebrow { color:var(--mango); font-size:.78rem; font-weight:800; letter-spacing:.14em; text-transform:uppercase; }
+    h1 { margin:.35rem 0 .5rem; font-size:clamp(2.2rem,8vw,4.6rem); line-height:.95; letter-spacing:-.05em; }
+    h2 { margin:2rem 0 .45rem; font-size:1.15rem; color:var(--mango); }
+    p,li { color:var(--muted); }
+    strong { color:var(--ink); }
+    a { color:var(--mango); }
+    .notice { margin:1.5rem 0; padding:18px; border:2px solid var(--coral); border-radius:16px; background:rgba(255,112,88,.08); color:var(--ink); }
+    .card { padding:26px; border:1px solid var(--line); border-radius:24px; background:rgba(16,41,35,.92); box-shadow:0 24px 70px rgba(0,0,0,.25); }
+    footer { margin-top:32px; padding-top:18px; border-top:1px solid var(--line); color:var(--muted); font-size:.88rem; overflow-wrap:anywhere; }
+  </style>
+</head>
+<body>
+<main>
+  <div class="eyebrow">TASKPOT · VERSION 1.0</div>
+  <h1>Privacy policy</h1>
+  <p>Last updated: August 13, 2026</p>
+
+  <div class="card">
+    <h2>Summary</h2>
+    <p>TASKPOT is designed to work offline without an account or developer backend. Tasks, wins, sprint state, and preferences are processed locally. The proposed App Store privacy answer is <strong>Data Not Collected</strong>, subject to a final audit of the signed archive, included SDKs, and runtime network behavior.</p>
+
+    <h2>Data stored on your device</h2>
+    <p>TASKPOT stores a versioned JSON snapshot in app-scoped iOS preferences. It may include task titles and enabled state, completion records and dates, focused seconds, the selected task, active sprint timestamps, sprint length, and music, effect, and haptic settings.</p>
+    <p>TASKPOT does not provide its own account or cloud-sync service. iOS device backup or transfer features may handle app data according to your Apple and device settings.</p>
+
+    <h2>Storage recovery</h2>
+    <p>If the stored snapshot cannot be decoded, TASKPOT preserves the unreadable bytes in a recovery entry, shows a notice, and disables changes so uncertain data is not overwritten. The app presents a starter state but remains read-only until you explicitly choose <strong>Erase all data</strong>. A failed ordinary save leaves the prior visible and stored state unchanged.</p>
+
+    <h2>Clipboard access</h2>
+    <p>TASKPOT reads clipboard text only after you tap <strong>Paste from Notes</strong>. It does not monitor the clipboard in the background or send clipboard content to the developer. iOS may display its own paste notice or control. Text entered into the bulk-import editor is processed locally.</p>
+
+    <h2>JSON export and external destinations</h2>
+    <p>A JSON export is created only when you request it. It contains the full current decodable snapshot, including tasks, wins, settings, selected-task state, and sprint timestamps. It is not redacted. Preserved corrupt recovery bytes are not included.</p>
+    <p>Review the file before choosing a destination in the system file exporter. Once you save or share the file outside TASKPOT, that destination and any selected service have their own privacy and retention practices. The developer does not receive the export through the app.</p>
+
+    <h2>Audio and haptics</h2>
+    <p>Music and sound effects are synthesized on the device. Haptics use local system feedback. The inspected version does not record microphone audio or collect motion data.</p>
+
+    <h2>Analytics, advertising, and tracking</h2>
+    <p>The inspected source contains no analytics SDK, advertising SDK, tracking, developer backend, or app network client. The privacy manifest declares tracking off and no collected-data categories. This statement must be reconciled with the final signed binary before release.</p>
+
+    <h2>External links</h2>
+    <p>Settings includes fixed links to this privacy policy and the TASKPOT support page. Opening one leaves TASKPOT and uses your browser. The website host and your browser or network provider may process ordinary request information such as an IP address, timestamp, and browser details under their own terms. TASKPOT does not attach your tasks, wins, clipboard content, or export file to those requests.</p>
+
+    <h2>Your controls</h2>
+    <ul>
+      <li><strong>Clear win history</strong> removes completion records while leaving tasks and settings.</li>
+      <li><strong>Erase all data</strong> removes current, legacy, and recovery snapshots, resets settings and state, and restores the three starter tasks.</li>
+      <li>JSON files already exported to another location are not removed by either action.</li>
+    </ul>
+
+    <h2>Contact</h2>
+    <p>Privacy questions: <a href="mailto:jacobegarcia101@gmail.com?subject=TASKPOT%20Privacy">jacobegarcia101@gmail.com</a>.</p>
+  </div>
+
+  <footer><a href="support.html">TASKPOT support</a></footer>
+</main>
+</body>
+</html>

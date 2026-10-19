@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Icarus Support</title>
+  <style>
+    :root { color-scheme:light; --paper:#f1e9d6; --ink:#17150f; --solar:#f6bd2f; --ember:#b64c2b; --muted:#625f56; --line:#bdb39d; }
+    * { box-sizing:border-box; }
+    body { margin:0; background:linear-gradient(150deg,#faf6ec,var(--paper)); color:var(--ink); font:16px/1.65 system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif; }
+    main { width:min(760px,calc(100% - 32px)); margin:0 auto; padding:56px 0 72px; }
+    .eyebrow { font-size:.78rem; font-weight:850; letter-spacing:.16em; text-transform:uppercase; color:var(--ember); }
+    h1 { margin:.35rem 0 .5rem; font:900 clamp(3rem,10vw,6rem)/.88 Georgia,serif; letter-spacing:-.055em; }
+    p { color:var(--muted); }
+    strong { color:var(--ink); }
+    details { margin:12px 0; padding:18px 20px; border:1px solid var(--line); background:rgba(255,255,255,.72); }
+    summary { cursor:pointer; font-weight:800; }
+    details[open] { border-color:var(--ember); }
+    .notice { margin:1.5rem 0; padding:18px; border:2px solid var(--ember); border-radius:14px; background:#fff5e5; color:var(--ink); }
+    footer { margin-top:32px; padding-top:18px; border-top:1px solid var(--line); color:var(--muted); font-size:.88rem; overflow-wrap:anywhere; }
+    code { overflow-wrap:anywhere; }
+  </style>
+</head>
+<body>
+<main>
+  <div class="eyebrow">Icarus · Support</div>
+  <h1>Rise. Focus. Land.</h1>
+  <p>Help with ambitions, task priorities, focus sessions, solar estimates, manual coordinates, reminders, recovery, and local data controls.</p>
+
+  <details open>
+    <summary>What is Today's Sun?</summary>
+    <p>It is the single ambition you want visible for the current day. Tap its card to edit it. Use the flight plan below it for smaller Now, Next, and Later tasks.</p>
+  </details>
+
+  <details>
+    <summary>What happens when a new day begins?</summary>
+    <p>Icarus removes completed tasks, keeps unfinished tasks, moves unfinished Now tasks to Next, and resets the day’s focus minutes and completed-session count. Your saved ritual settings and streak state remain.</p>
+  </details>
+
+  <details>
+    <summary>How are sunrise and sundown calculated?</summary>
+    <p>Icarus uses a NOAA-style local calculation based on the city label, latitude, longitude, calendar, and timezone available to the app. It does not use device Location Services. Solar times are estimates and may be unavailable at some polar coordinates or dates.</p>
+  </details>
+
+  <details>
+    <summary>How do I use my own location?</summary>
+    <p>Open Rituals, enter a city label plus latitude and longitude, then tap Save sun position. Coordinates are clamped to supported ranges. If the values cannot be parsed, the current saved position remains unchanged.</p>
+  </details>
+
+  <details>
+    <summary>Will a focus session continue if I leave the screen?</summary>
+    <p>An active session stores its target end date, while a paused session stores the remaining seconds. Returning to Focus restores that state. iOS can suspend the interface in the background, so the app derives remaining time when it becomes active again.</p>
+  </details>
+
+  <details>
+    <summary>What are White, Brown, and Rain sounds?</summary>
+    <p>They are optional procedural sounds generated locally during a focus session. Playback uses an ambient session that mixes with other audio. No streaming or microphone recording is involved. Device volume and audio conditions still affect playback.</p>
+  </details>
+
+  <details>
+    <summary>Why did a reminder not arrive?</summary>
+    <p>Icarus reminders depend on iOS authorization and delivery conditions, including Focus modes, notification and sound settings, battery state, and whether the device is available. They are not guaranteed alarms. Check iPhone Settings, return to Icarus, and use Refresh alerts if reminders remain enabled.</p>
+  </details>
+
+  <details>
+    <summary>How do I turn reminders off?</summary>
+    <p>Open Rituals and tap Turn off alerts. Icarus removes its pending local notification requests and stores the reminder preference as off.</p>
+  </details>
+
+  <details>
+    <summary>Why are changes disabled?</summary>
+    <p>If Icarus cannot decode saved data, it preserves the unreadable bytes and becomes read-only so it does not overwrite uncertain data. The starter content shown in that state is not a successful recovery. Use Erase all data only if you intend to discard the saved and recovery data and start over.</p>
+  </details>
+
+  <details>
+    <summary>Can I export data or view history?</summary>
+    <p>Not in version 1.0. The interface does not currently expose history or export.</p>
+  </details>
+
+  <details>
+    <summary>Where are the privacy policy and support links?</summary>
+    <p>Open Rituals and scroll to Private by design. The fixed Privacy policy and Support links open the public Icarus pages in your browser. No ambition, task, coordinate, or focus data is attached automatically.</p>
+  </details>
+
+  <details>
+    <summary>Is Icarus a sleep or health app?</summary>
+    <p>No. Sleep, recovery, ascent, and landing are productivity metaphors. Icarus is not medical care, sleep treatment, health monitoring, diagnosis, or emergency support.</p>
+  </details>
+
+  <details>
+    <summary>What do reset and erase remove?</summary>
+    <p>Reset today restores the starter ambition/tasks and clears today's focus minutes and ascent count while preserving the documented ritual and streak settings. Erase all data cancels pending alerts, removes current, legacy, and recovery local data, and restores defaults.</p>
+  </details>
+
+  <details>
+    <summary>How can I contact support?</summary>
+    <p>Support email: <a href="mailto:jacobegarcia101@gmail.com?subject=Icarus%20Support">jacobegarcia101@gmail.com</a>.</p>
+  </details>
+
+  <footer><a href="privacy.html">Privacy policy</a></footer>
+</main>
+</body>
+</html>

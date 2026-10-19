@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <title>Renewal Exit Support</title>
+  <style>
+    :root { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; line-height: 1.55; color-scheme: light dark; }
+    body { margin: 0; background: Canvas; color: CanvasText; }
+    main { max-width: 760px; margin: 0 auto; padding: 48px 22px 72px; }
+    h1 { font-size: clamp(2rem, 8vw, 3.25rem); line-height: 1.05; margin: 0 0 12px; }
+    h2 { margin-top: 2rem; font-size: 1.25rem; }
+    p, li { max-width: 70ch; }
+    .eyebrow { font-size: .78rem; font-weight: 800; letter-spacing: .12em; text-transform: uppercase; }
+    .notice { border: 2px solid currentColor; border-radius: 18px; padding: 18px; margin: 28px 0; }
+    details { border-top: 1px solid color-mix(in srgb, CanvasText 24%, transparent); padding: 16px 0; }
+    summary { cursor: pointer; font-weight: 750; }
+    a { color: inherit; text-underline-offset: 3px; }
+    footer { margin-top: 3rem; font-size: .9rem; opacity: .72; }
+  </style>
+</head>
+<body>
+<main>
+  <div class="eyebrow">Support · Version 1.0 · Updated August 13, 2026</div>
+  <h1>Make the next renewal decision clear.</h1>
+  <p>Renewal Exit is a manual, local-only ledger for recurring costs. It does not access provider accounts or banks.</p>
+
+  <div class="notice"><strong>Need help?</strong> Email <a href="mailto:jacobegarcia101@gmail.com?subject=Renewal%20Exit%20Support">jacobegarcia101@gmail.com</a>. Include the app version, iOS version, and what you expected to happen. Do not send passwords, bank details, card numbers, or an export containing information you do not want to share.</div>
+
+  <h2>Getting started</h2>
+  <ol>
+    <li>Tap <strong>Add</strong> from Overview or Renewals.</li>
+    <li>Enter a name, positive amount, currency, billing cycle, and next renewal date.</li>
+    <li>Review upcoming dates in Renewals and separate rolling 12-month projections in Overview.</li>
+    <li>Open a record to keep it for another cycle, plan one exit action, or confirm a cancellation you completed with the provider.</li>
+  </ol>
+
+  <h2>Frequently asked questions</h2>
+  <details open>
+    <summary>Does planning an exit cancel anything?</summary>
+    <p>No. An exit plan is a local note containing one next action. The item stays in your projection until you cancel directly with the provider and then confirm that fact in the app.</p>
+  </details>
+  <details>
+    <summary>What does Keep do?</summary>
+    <p>Keep advances the record to its next future billing cycle and clears any exit plan. It does not contact or pay the provider.</p>
+  </details>
+  <details>
+    <summary>Why are currency totals separate?</summary>
+    <p>The app supports USD, EUR, GBP, and JPY but does not retrieve exchange rates. Separate projections avoid inventing a combined value.</p>
+  </details>
+  <details>
+    <summary>How do I export my ledger?</summary>
+    <p>Open More and choose <strong>Prepare JSON export</strong>, then use <strong>Share prepared export</strong>. You control the destination through the iOS share sheet.</p>
+  </details>
+  <details>
+    <summary>What is a recovery archive?</summary>
+    <p>If the app cannot decode stored ledger data, it keeps the original local bytes and offers a recovery export in More. This protects the original bytes from silent replacement; version 1.0 does not import or automatically repair the archive.</p>
+  </details>
+  <details>
+    <summary>How do I delete everything?</summary>
+    <p>Open More, choose <strong>Delete all local data</strong>, and confirm. This removes active, planned, canceled, and recovery records from the app. Delete separately any copies you previously exported elsewhere.</p>
+  </details>
+  <details>
+    <summary>Does the app send renewal reminders?</summary>
+    <p>No. Version 1.0 does not schedule notifications or reminders.</p>
+  </details>
+
+  <h2>Important limits</h2>
+  <p>Renewal Exit does not detect charges, connect to banks, verify prices, calculate exchange rates, contact providers, cancel subscriptions, prove savings, or provide financial advice. Always verify renewal and cancellation terms directly with the provider.</p>
+
+  <h2>Privacy</h2>
+  <p>Read the <a href="privacy.html">privacy policy</a>. Your ledger stays in local app storage unless you explicitly export it.</p>
+
+  <footer><a href="privacy.html">Privacy policy</a></footer>
+</main>
+</body>
+</html>

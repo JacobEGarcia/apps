@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <title>Run Clubbed Support</title>
+  <style>
+    :root { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; line-height: 1.55; color-scheme: light dark; }
+    body { margin: 0; background: Canvas; color: CanvasText; }
+    main { max-width: 760px; margin: 0 auto; padding: 48px 22px 72px; }
+    h1 { font-size: clamp(2rem, 8vw, 3.25rem); line-height: 1.05; margin: 0 0 12px; }
+    h2 { margin-top: 2rem; font-size: 1.25rem; }
+    p, li { max-width: 70ch; }
+    .eyebrow { color: #c5191d; font-size: .78rem; font-weight: 850; letter-spacing: .12em; text-transform: uppercase; }
+    .notice { border: 2px solid currentColor; border-radius: 18px; padding: 18px; margin: 28px 0; }
+    details { border-top: 1px solid color-mix(in srgb, CanvasText 24%, transparent); padding: 16px 0; }
+    summary { cursor: pointer; font-weight: 750; }
+    a { color: inherit; text-underline-offset: 3px; }
+    footer { margin-top: 3rem; font-size: .9rem; opacity: .72; }
+  </style>
+</head>
+<body>
+<main>
+  <div class="eyebrow">Support · Version 1.0</div>
+  <h1>Show up. Move. Keep an honest record.</h1>
+  <p>Run Clubbed is a local run timer and planner for people you already run with.</p>
+
+  <div class="notice"><strong>Need help?</strong> Email <a href="mailto:jacobegarcia101@gmail.com?subject=Run%20Clubbed%20Support">jacobegarcia101@gmail.com</a>. Include the app version, iOS version, and what you expected to happen. Never send health records, passwords, private meeting points, or an export you do not want to share.</div>
+
+  <h2>Start a run</h2>
+  <ol>
+    <li>Open Run and choose Solo Run or Club Run.</li>
+    <li>Tap Start Run.</li>
+    <li>Manually pause whenever you choose; paused time is excluded.</li>
+    <li>Tap Finish, optionally enter known distance in kilometers, choose effort from 1–5, and save the receipt.</li>
+  </ol>
+
+  <h2>Plan a club commitment</h2>
+  <ol>
+    <li>Open Club → Roster and add names only with permission.</li>
+    <li>Open Club → Runs and add a local plan with its meeting point and date.</li>
+    <li>Open the event and keep private local RSVP marks for runners you entered.</li>
+    <li>Complete it with an optional recap or mark it canceled. Restore it later from History if needed.</li>
+  </ol>
+
+  <h2>Frequently asked questions</h2>
+  <details open>
+    <summary>Does Run Clubbed use GPS?</summary>
+    <p>No. Version 1.0 does not request location or background location. Distance is optional and manually entered when you finish.</p>
+  </details>
+  <details>
+    <summary>How is pace calculated?</summary>
+    <p>Pace is active timer seconds divided by the distance you entered. It is not GPS-verified and appears only when a valid manual distance exists.</p>
+  </details>
+  <details>
+    <summary>Does the app invite or message runners?</summary>
+    <p>No. Roster names and local RSVP marks are private, unverified records on your iPhone. Share every plan with your group yourself.</p>
+  </details>
+  <details>
+    <summary>Does the app send reminders?</summary>
+    <p>No. Version 1.0 does not schedule local notifications or send push notifications.</p>
+  </details>
+  <details>
+    <summary>What happens if I leave the app during a run?</summary>
+    <p>The active timer state is saved locally. Active segments use the iPhone monotonic system clock, so manual device-clock changes do not manufacture time. If the iPhone restarts or a clock discontinuity is detected, the app pauses the timer for review instead of guessing. Reopen Run to continue, finish, or discard.</p>
+  </details>
+  <details>
+    <summary>How do I export my data?</summary>
+    <p>Open More and choose <strong>Prepare JSON export</strong>, then <strong>Share prepared export</strong>. You choose the destination through the iOS share sheet.</p>
+  </details>
+  <details>
+    <summary>What is a recovery archive?</summary>
+    <p>If local data cannot be decoded, Run Clubbed preserves the original bytes locally and never shares them. Version 1.0 does not import or automatically repair that recovery snapshot. Delete All removes it.</p>
+  </details>
+  <details>
+    <summary>How do I delete everything?</summary>
+    <p>Open More, choose <strong>Delete all local data</strong>, and confirm. This clears the local roster, plans, receipts, active timer, and recovery copy. Delete previously exported copies from their destinations separately.</p>
+  </details>
+
+  <h2>Safety and health limits</h2>
+  <p>Run Clubbed is not an emergency monitor, safety service, medical device, or coach. It does not verify locations, attendance, distance, pace, or identity. Share plans directly, follow local conditions, and seek qualified guidance when needed.</p>
+
+  <h2>Privacy</h2>
+  <p>Read the <a href="privacy.html">privacy policy</a>. The app keeps data locally unless you explicitly export it.</p>
+
+  <footer><a href="privacy.html">Privacy policy</a></footer>
+</main>
+</body>
+</html>

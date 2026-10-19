@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <title>Support — Swallow the Frog</title>
+  <style>
+    :root { color-scheme: light dark; --paper:#f2ead5; --ink:#2b2317; --faded:#675b49; --rule:#b89e68; --blue:#29487f; --red:#a8422b; --sage:#58683e; --panel:#fbf6e8; }
+    @media (prefers-color-scheme: dark) { :root { --paper:#171814; --ink:#f4ead0; --faded:#c8bda4; --rule:#756b4e; --blue:#9eb9ec; --red:#ed9b7f; --sage:#b3ca8e; --panel:#22231d; } }
+    * { box-sizing:border-box; }
+    body { margin:0; background:var(--paper); color:var(--ink); font:18px/1.65 ui-serif, Georgia, serif; }
+    main { width:min(820px, calc(100% - 32px)); margin:32px auto 64px; }
+    article { margin-top:18px; padding:clamp(24px, 6vw, 54px); border:1px solid var(--rule); background:var(--panel); box-shadow:0 12px 36px rgb(0 0 0 / .08); }
+    h1,h2 { line-height:1.15; }
+    h1 { margin:.2em 0; color:var(--blue); font-size:clamp(2.2rem, 8vw, 4rem); }
+    h2 { margin-top:2em; color:var(--red); font-size:1.25rem; }
+    .lede { color:var(--faded); font-size:1.1rem; }
+    .card { margin:16px 0; padding:18px 20px; border-left:4px solid var(--sage); background:color-mix(in srgb, var(--sage) 8%, transparent); }
+    a { color:var(--blue); }
+    li + li { margin-top:.55em; }
+    footer { margin-top:38px; padding-top:18px; border-top:1px solid var(--rule); color:var(--faded); }
+  </style>
+</head>
+<body>
+  <main>
+    <article>
+      <p>Swallow the Frog</p>
+      <h1>Support</h1>
+      <p class="lede">A private iPhone tool for choosing one difficult task, taking a small first bite, and keeping an honest daily chronicle.</p>
+
+      <div class="card">
+        <strong>Need direct help?</strong><br>
+        Email <a href="mailto:jacobegarcia101@gmail.com?subject=Swallow%20the%20Frog%20Support">jacobegarcia101@gmail.com</a> with the app version, iOS version, and a description of what happened. Do not include private task content unless you choose to share it.
+      </div>
+
+      <h2>System requirements</h2>
+      <p>Version 1.0 is designed for iPhone and requires iOS 17 or later. It does not require an account or network connection for its core features.</p>
+
+      <h2>Choose today’s frog</h2>
+      <ol>
+        <li>Open <strong>Labours</strong>.</li>
+        <li>Add a task and, optionally, a first bite that can be started in under five minutes.</li>
+        <li>Choose the crown action to make it today’s frog.</li>
+        <li>Return to <strong>Today</strong> to work with the selected task.</li>
+      </ol>
+      <p>Only one unresolved frog can be selected at a time. Releasing the current frog keeps the task available in Lesser Labours and records the release in the Chronicle.</p>
+
+      <h2>First bites and outcomes</h2>
+      <p>A first bite is the smallest concrete action that begins the work. You can edit it from Today and mark it taken without claiming the whole task is complete. Marking a frog swallowed completes the task and records the outcome in the Chronicle.</p>
+
+      <h2>Chronicle and streak</h2>
+      <p>The Chronicle shows selected frogs and whether each was swallowed, released, or remains unresolved. The streak counts consecutive local calendar days with a swallowed frog. Missing a day does not erase your history.</p>
+
+      <h2>Export your data</h2>
+      <ol>
+        <li>Open <strong>More</strong>.</li>
+        <li>Select <strong>Prepare data export</strong>.</li>
+        <li>Select <strong>Share prepared export</strong>.</li>
+        <li>Choose where to save or send the JSON file using the iOS share sheet.</li>
+      </ol>
+      <p>The app removes its prepared temporary file when it is replaced, when you leave More, and during Delete All. It cannot retrieve or remove copies after you share or save them elsewhere.</p>
+
+      <h2>Delete all local data</h2>
+      <ol>
+        <li>Open <strong>More</strong>.</li>
+        <li>Select <strong>Delete all local data</strong>.</li>
+        <li>Confirm the destructive action.</li>
+      </ol>
+      <p>This removes the local task and chronicle archive from the app. It does not remove JSON copies previously exported outside the app.</p>
+
+      <h2>Troubleshooting</h2>
+      <ul>
+        <li><strong>A task cannot be deleted:</strong> release or finish it first if it is currently selected as today’s frog.</li>
+        <li><strong>The streak changed:</strong> streaks use local calendar days. Confirm that the iPhone’s date and time zone are correct.</li>
+        <li><strong>An export will not share:</strong> prepare the export again, then choose Share prepared export.</li>
+        <li><strong>Data appears missing:</strong> confirm you are using the same iPhone installation. Version 1.0 has no account or cloud synchronization.</li>
+      </ul>
+
+      <h2>Privacy and safety</h2>
+      <p>Read the <a href="privacy.html">privacy policy</a>. Swallow the Frog is a productivity aid, not medical or mental-health treatment. Use it gently; a missed day is information, not failure.</p>
+
+      <footer>© 2026 Jacob Emmanuel Garcia. Swallow the Frog.</footer>
+    </article>
+  </main>
+</body>
+</html>

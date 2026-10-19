@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Noted Wild Privacy Policy — Release Draft</title>
+  <style>
+    :root{color-scheme:light dark}body{font:18px/1.65 system-ui,-apple-system,sans-serif;margin:auto;max-width:760px;padding:32px;color:#17251c;background:#f5f0df}h1,h2{font-family:Georgia,serif;line-height:1.2}.warning{border:3px solid #a54223;background:#fff2e8;color:#4d1d0f;padding:16px;font-weight:750}code{overflow-wrap:anywhere}@media(prefers-color-scheme:dark){body{color:#eef3e8;background:#142019}.warning{background:#3e2118;color:#ffe9de}a{color:#a9d7ff}}
+  </style>
+</head>
+<body>
+<main>
+  <p class="warning">RELEASE DRAFT — THIS PAGE IS NOT PUBLISHED OR LIVE-VERIFIED. Add the final legal operator and monitored support contact before App Store submission.</p>
+  <h1>Noted Wild Privacy Policy</h1>
+  <p>Draft effective date: August 13, 2026.</p>
+
+  <h2>Summary</h2>
+  <p>Noted Wild is designed as a local observation journal. The current app source has no account, backend, sync, advertising, analytics, tracking, or third-party SDK. The developer does not receive your journal through the app.</p>
+
+  <h2>Information stored on your device</h2>
+  <p>You may enter an observation title and note, date, time, place, weather note, temperature note, subject tags, and favorite status. An unfinished observation may be stored as a draft. The journal supports up to 500 observations, with up to 12,000 characters in each observation body. These details are entered manually. The app does not request location access, identify species, verify observations, or retrieve weather.</p>
+  <p>The current app source stores the journal in JSON files under the app’s Application Support directory. It uses atomic writes, verifies written bytes, and attempts to apply iOS file protection that keeps managed files unavailable until the device has been unlocked after restart. It also keeps a previous local snapshot for recovery. If saved data is unreadable, Noted Wild may preserve the unreadable bytes and a read-only marker so you can export or erase recoverable data rather than silently overwrite it.</p>
+
+  <h2>Exports</h2>
+  <p>You may choose to export a complete JSON snapshot, a Markdown copy of saved observations, or an available recovery copy through Apple’s document-export interface. Exports are not redacted and can contain journal text, manually entered place and condition details, tags, favorites, dates, times, and other stored fields. Review both the file and destination before sharing. Noted Wild does not automatically receive a copy.</p>
+
+  <h2>Deletion</h2>
+  <p>Delete All is designed to remove the journal, saved draft, previous backup, and preserved recovery copy from the app’s local store. Deleting the app also removes its app container under normal iOS behavior. Files you previously exported are outside the app and must be managed at their destination.</p>
+
+  <h2>External pages</h2>
+  <p>Opening a privacy or support page leaves the app. The hosting provider may process ordinary web-request information under its own policy. The app does not attach your journal to these requests.</p>
+
+  <h2>Children</h2>
+  <p>Noted Wild is not designed to collect personal information from children or anyone else. Because the current product has no developer-operated collection service, journal content remains on the device unless the user chooses to export it.</p>
+
+  <h2>Changes</h2>
+  <p>If the product later adds accounts, sync, analytics, advertising, or any other data transfer, this policy and the App Store privacy disclosure must be updated before that version is released.</p>
+
+  <h2>Contact</h2>
+  <p><strong>[REPLACE BEFORE SUBMISSION: monitored support email and legal operator identity]</strong></p>
+  <p>Intended URL, currently returning HTTP 404 and not published: <code>https://jacobegarcia.github.io/apps/noted-wild/privacy.html</code></p>
+</main>
+</body>
+</html>

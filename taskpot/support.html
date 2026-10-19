@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>TASKPOT Support</title>
+  <style>
+    :root { color-scheme:dark; --bg:#071b18; --panel:#102923; --ink:#fff8df; --muted:#b9c9bf; --mango:#ffc84a; --coral:#ff7058; --lagoon:#48d5be; --line:#315249; }
+    * { box-sizing:border-box; }
+    body { margin:0; background:radial-gradient(circle at top,#164b3d 0,#071b18 48rem); color:var(--ink); font:16px/1.65 system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif; }
+    main { width:min(760px,calc(100% - 32px)); margin:0 auto; padding:56px 0 72px; }
+    .eyebrow { color:var(--mango); font-size:.78rem; font-weight:800; letter-spacing:.14em; text-transform:uppercase; }
+    h1 { margin:.35rem 0 .5rem; font-size:clamp(2.2rem,8vw,4.6rem); line-height:.95; letter-spacing:-.05em; }
+    p { color:var(--muted); }
+    strong { color:var(--ink); }
+    details { margin:12px 0; padding:18px 20px; border:1px solid var(--line); border-radius:18px; background:rgba(16,41,35,.92); }
+    summary { cursor:pointer; color:var(--ink); font-weight:750; }
+    details[open] { border-color:var(--lagoon); }
+    .notice { margin:1.5rem 0; padding:18px; border:2px solid var(--coral); border-radius:16px; background:rgba(255,112,88,.08); color:var(--ink); }
+    footer { margin-top:32px; padding-top:18px; border-top:1px solid var(--line); color:var(--muted); font-size:.88rem; overflow-wrap:anywhere; }
+  </style>
+</head>
+<body>
+<main>
+  <div class="eyebrow">TASKPOT · SUPPORT</div>
+  <h1>Get unstuck.</h1>
+  <p>Practical help for task entry, clipboard import, random selection, focus sprints, sound, recovery, and local data controls.</p>
+
+  <details open>
+    <summary>How does TASKPOT choose a task?</summary>
+    <p>It randomly selects from tasks that are currently enabled. If more than one task is enabled, it avoids immediately repeating the currently selected task. TASKPOT does not claim a certified drawing, fairness guarantee, or equal long-run outcome.</p>
+  </details>
+
+  <details>
+    <summary>Is this gambling?</summary>
+    <p>No. The reels, pull control, jackpot language, wins, and celebration are a productivity theme. TASKPOT has no money, wagering, odds, prizes, redeemable rewards, purchases, or real gambling.</p>
+  </details>
+
+  <details>
+    <summary>How do I paste tasks from Notes?</summary>
+    <p>Copy checklist lines or plain text in Notes. Return to TASKPOT, open Tasks, open the import menu, then tap <strong>Paste from Notes</strong>. TASKPOT reads clipboard text only after that tap. You can also choose <strong>Type or paste a list</strong> and enter one task per line.</p>
+  </details>
+
+  <details>
+    <summary>What task-list formats work?</summary>
+    <p>Plain lines, bullets, numbered lines, checkboxes, and common checkmarks are accepted. Empty and duplicate lines are skipped. A single bulk import accepts up to 100 unique lines, and task titles are limited to 180 characters.</p>
+  </details>
+
+  <details>
+    <summary>Can I choose the sprint length?</summary>
+    <p>Yes. Open Wins, then Settings, and choose 5, 10, 15, or 25 minutes. Starting a sprint is optional; you can mark the selected task done without starting one.</p>
+  </details>
+
+  <details>
+    <summary>Why did music, sound, or haptics stop?</summary>
+    <p>Check the three independent controls under Settings. TASKPOT stops its synthesized audio when it leaves the foreground. Device silent-mode, volume, audio-session, or haptic settings may also affect feedback.</p>
+  </details>
+
+  <details>
+    <summary>Why are changes disabled?</summary>
+    <p>If TASKPOT cannot decode saved data, it preserves a recovery copy and becomes read-only so it does not overwrite uncertain bytes. The starter state shown in that condition is not a successful recovery of the unreadable tasks. Use <strong>Erase all data</strong> only if you intend to discard the saved and recovery data and start over.</p>
+  </details>
+
+  <details>
+    <summary>What is included in JSON export?</summary>
+    <p>The export contains the full current decodable snapshot: tasks, wins, preferences, selected-task state, and active sprint timestamps. It does not include preserved corrupt recovery bytes. Review the file before choosing an external destination because it is not redacted.</p>
+  </details>
+
+  <details>
+    <summary>What do clear and erase remove?</summary>
+    <p><strong>Clear win history</strong> removes completion records only. <strong>Erase all data</strong> removes tasks, wins, settings, sprint state, and recovery data, then restores starter tasks. Files previously exported elsewhere are not removed.</p>
+  </details>
+
+  <details>
+    <summary>Does TASKPOT use AI, an account, or cloud sync?</summary>
+    <p>No. Version 1.0 uses local app logic and app-scoped preferences. It has no AI generation, account, or app-operated cloud-sync service. iOS backups or device transfer may handle app data according to your system settings.</p>
+  </details>
+
+  <details>
+    <summary>Where are the privacy policy and support links in the app?</summary>
+    <p>Open <strong>Wins</strong>, tap the Settings button, then scroll to <strong>Privacy</strong>. The fixed Privacy policy and Support links open these public pages in your browser. TASKPOT does not attach task data to either request.</p>
+  </details>
+
+  <details>
+    <summary>How can I contact support?</summary>
+    <p>Support email: <a href="mailto:jacobegarcia101@gmail.com?subject=TASKPOT%20Support">jacobegarcia101@gmail.com</a>.</p>
+  </details>
+
+  <footer><a href="privacy.html">Privacy policy</a></footer>
+</main>
+</body>
+</html>

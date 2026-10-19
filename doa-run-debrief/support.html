@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <title>DOA: Run Debrief Support</title>
+  <style>
+    :root { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; line-height: 1.58; color-scheme: light dark; }
+    body { margin: 0; background: Canvas; color: CanvasText; }
+    main { max-width: 780px; margin: 0 auto; padding: 48px 22px 72px; }
+    h1 { font: 800 clamp(2rem, 8vw, 3.6rem)/1 -apple-system, BlinkMacSystemFont, sans-serif; margin: 0 0 14px; }
+    h2 { margin-top: 2.2rem; font-size: 1.15rem; text-transform: uppercase; letter-spacing: .04em; }
+    p, li { max-width: 72ch; }
+    .eyebrow { color: #d12b32; font-size: .78rem; font-weight: 850; letter-spacing: .14em; text-transform: uppercase; }
+    .notice { border: 2px solid currentColor; border-left: 8px solid #d12b32; padding: 18px; margin: 28px 0; }
+    details { border-top: 1px solid color-mix(in srgb, CanvasText 24%, transparent); padding: 16px 0; }
+    summary { cursor: pointer; font-weight: 800; }
+    a { color: inherit; text-underline-offset: 4px; }
+    footer { margin-top: 3rem; font-size: .86rem; opacity: .72; }
+  </style>
+</head>
+<body>
+<main>
+  <div class="eyebrow">Support · Version 1.0</div>
+  <h1>Debrief the run that happened.</h1>
+  <p>DOA: Run Debrief turns a completed, changed, shortened, or missed run into one private case file and one next adjustment.</p>
+
+  <div class="notice"><strong>Need help?</strong> Email <a href="mailto:jacobegarcia101@gmail.com?subject=DOA%20Run%20Debrief%20Support">jacobegarcia101@gmail.com</a>. Include the app version, iOS version, and what you expected to happen. A JSON export contains the complete selected case fields and is not sanitized; review it before sharing and do not send private information you do not want to disclose.</div>
+
+  <h2>Create a debrief</h2>
+  <ol>
+    <li>Choose Completed as planned, Changed the plan, Cut it short, or Did not start.</li>
+    <li>Optionally enter intended and actual distance/time, effort, and friction.</li>
+    <li>Write what happened, what worked, and one adjustment.</li>
+    <li>Save the private case file.</li>
+  </ol>
+
+  <h2>Frequently asked questions</h2>
+  <details open>
+    <summary>Does the app track my run?</summary>
+    <p>No. Version 1.0 has no timer, GPS, routes, background location, HealthKit, Apple Watch, or automatic workout data. Entries are manual and unverified.</p>
+  </details>
+  <details>
+    <summary>Why do Patterns say I need more records?</summary>
+    <p>Pattern summaries intentionally wait for at least three saved debriefs. After that, they show outcome counts and friction tags that occur in at least two case files—not AI coaching, prediction, diagnosis, or proof of cause.</p>
+  </details>
+  <details>
+    <summary>Can I use miles or kilometers?</summary>
+    <p>Yes. Open More to choose your preferred unit. Existing values should keep the same physical meaning when the display unit changes.</p>
+  </details>
+  <details>
+    <summary>How do I reuse a case file?</summary>
+    <p>Open its detail and choose <strong>Duplicate for a new attempt</strong>. The app opens a new, unsaved draft dated today. Review it and tap Save to create a separate case, or cancel to leave your archive unchanged.</p>
+  </details>
+  <details>
+    <summary>How do I export my data?</summary>
+    <p>For one record, choose <strong>Prepare this case as JSON</strong>, then <strong>Share prepared case</strong>. For all records, open More, choose <strong>Prepare all case files as JSON</strong>, then <strong>Share prepared export</strong>. The file contains every selected stored field without redaction. Review it before choosing a destination in the iOS share sheet.</p>
+  </details>
+  <details>
+    <summary>What happens if saved data cannot be opened?</summary>
+    <p>The app preserves the unreadable primary bytes in a local recovery snapshot and restores the prior valid local backup when one is available. Version 1.0 does not expose or share the recovery snapshot. Delete All removes it.</p>
+  </details>
+  <details>
+    <summary>How do I delete everything?</summary>
+    <p>Open More, choose <strong>Delete all local data</strong>, and confirm. This removes case files, the unit preference, primary and backup archives, the recovery snapshot, and prepared temporary exports. Delete copies already shared elsewhere from their destinations separately.</p>
+  </details>
+  <details>
+    <summary>Does the app provide training or medical advice?</summary>
+    <p>No. Reflections and patterns are your own manual record. The app does not diagnose, prescribe, prevent injury, monitor emergencies, or guarantee performance or safety.</p>
+  </details>
+
+  <h2>Privacy</h2>
+  <p>Read the <a href="privacy.html">privacy policy</a>. Version 1.0 is designed to keep data local unless you explicitly export it.</p>
+
+  <h2>External links</h2>
+  <p>Opening this support page, the privacy page, or email support leaves the app. The destination website, browser, or email provider may process ordinary request metadata under its own policy. The app does not attach a case file automatically.</p>
+
+  <footer><a href="privacy.html">Privacy policy</a></footer>
+</main>
+</body>
+</html>

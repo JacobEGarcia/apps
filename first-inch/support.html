@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <title>First Inch Support</title>
+  <style>
+    :root { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; line-height: 1.58; color-scheme: light dark; }
+    body { margin: 0; background: Canvas; color: CanvasText; }
+    main { max-width: 780px; margin: 0 auto; padding: 52px 22px 76px; }
+    h1 { font-size: clamp(2.2rem, 9vw, 4.2rem); line-height: .98; margin: 0 0 14px; }
+    h2 { margin-top: 2.2rem; font-size: 1.15rem; text-transform: uppercase; letter-spacing: .05em; }
+    p, li { max-width: 72ch; }
+    .eyebrow { font: 800 .78rem ui-monospace, SFMono-Regular, Menlo, monospace; letter-spacing: .14em; text-transform: uppercase; }
+    .notice { border: 2px solid currentColor; padding: 18px; margin: 28px 0; }
+    details { border-top: 1px solid color-mix(in srgb, CanvasText 28%, transparent); padding: 16px 0; }
+    summary { cursor: pointer; font-weight: 800; }
+    a { color: inherit; text-underline-offset: 4px; }
+    footer { margin-top: 3rem; font-size: .86rem; opacity: .72; }
+  </style>
+</head>
+<body>
+<main>
+  <div class="eyebrow">Support · Version 1.0</div>
+  <h1>Make the start smaller.</h1>
+  <p>First Inch turns one overwhelming intention into one private, concrete first move.</p>
+
+  <div class="notice"><strong>Need app help?</strong> Email <a href="mailto:jacobegarcia101@gmail.com?subject=First%20Inch%20Support">jacobegarcia101@gmail.com</a>. Include the app version, iOS version, language, and what you expected. Do not send private intentions, health information, or a JSON export you do not want to disclose.</div>
+
+  <h2>Start a first move</h2>
+  <ol>
+    <li>Enter an ordinary intention on Start.</li>
+    <li>Choose what makes it difficult and your current energy.</li>
+    <li>Choose Create first step.</li>
+    <li>Make it easier or try another if needed, then start the local sprint.</li>
+    <li>Mark the move done when you complete it.</li>
+  </ol>
+
+  <h2>Frequently asked questions</h2>
+  <details open>
+    <summary>Does First Inch use AI or upload my intention?</summary>
+    <p>No. Version 1.0 uses deterministic logic on the device and has no developer backend. It does not upload intentions or completion history.</p>
+  </details>
+  <details>
+    <summary>Why is my daily reminder off?</summary>
+    <p>The reminder stays off if notification permission is denied or iOS cannot schedule it. Changes are processed in order and reconciled when First Inch returns to the foreground. Enable notifications for First Inch in iOS Settings, return to the app, then try the reminder again under You.</p>
+  </details>
+  <details>
+    <summary>Will an active sprint continue after I leave?</summary>
+    <p>The app saves the sprint’s start date locally and derives the remaining time when you return. Runtime behavior still depends on the device clock and must not be used for safety-critical timing.</p>
+  </details>
+  <details>
+    <summary>How do I export my data?</summary>
+    <p>Open You → Data and choose <strong>Export my data</strong>. The JSON contains the complete stored snapshot and is not sanitized. Review it before saving or sharing it.</p>
+  </details>
+  <details>
+    <summary>What is the difference between clearing and erasing?</summary>
+    <p><strong>Clear all history</strong> removes completed starts. <strong>Erase app data…</strong> removes protected and legacy local state first, then cancels the reminder and returns to onboarding. If removal fails, the reminder and visible state remain and the app reports the failure. Copies you exported elsewhere are not removed.</p>
+  </details>
+  <details>
+    <summary>Why did I see a local-storage notice?</summary>
+    <p>First Inch reports when it cannot read, migrate, save, or erase local data. It has no writable preferences fallback. If protected-file storage is unavailable or existing data cannot be read, changes are disabled until you explicitly choose to erase app data. A failed save leaves the prior visible state in place. Follow the message and do not assume a change was saved or deleted until the app confirms it.</p>
+  </details>
+
+  <h2>Crisis and emergency support</h2>
+  <p>First Inch is not a crisis service and this email is not monitored for emergencies. If you may act now or anyone is in immediate physical danger, call the local emergency number or go to the nearest emergency department. In the U.S. and Canada, 988 may be available by call or text. Outside those countries, contact an appropriate local crisis or emergency service.</p>
+  <p>The app’s phrase check is narrow and can miss relevant text or flag unrelated text. Do not rely on it to assess safety.</p>
+
+  <h2>Privacy</h2>
+  <p>Read the <a href="privacy.html">privacy policy</a>. Opening this page, email, or another external service leaves the app; the provider may process ordinary request metadata under its own terms.</p>
+  <p>Inside the app, open <strong>You</strong>, scroll to <strong>Legal</strong>, and choose <strong>Support</strong> to open this fixed page in your browser. First Inch does not attach your intention, history, or export to that request.</p>
+
+  <footer><a href="privacy.html">Privacy policy</a></footer>
+</main>
+</body>
+</html>

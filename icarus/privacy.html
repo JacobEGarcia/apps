@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Icarus Privacy Policy</title>
+  <style>
+    :root { color-scheme:light; --paper:#f1e9d6; --ink:#17150f; --solar:#f6bd2f; --ember:#b64c2b; --muted:#625f56; --line:#bdb39d; }
+    * { box-sizing:border-box; }
+    body { margin:0; background:linear-gradient(150deg,#faf6ec,var(--paper)); color:var(--ink); font:16px/1.65 system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif; }
+    main { width:min(760px,calc(100% - 32px)); margin:0 auto; padding:56px 0 72px; }
+    .eyebrow { font-size:.78rem; font-weight:850; letter-spacing:.16em; text-transform:uppercase; color:var(--ember); }
+    h1 { margin:.35rem 0 .5rem; font:900 clamp(3rem,10vw,6rem)/.88 Georgia,serif; letter-spacing:-.055em; }
+    h2 { margin:2rem 0 .45rem; font-size:1.12rem; text-transform:uppercase; letter-spacing:.06em; }
+    p,li { color:var(--muted); }
+    strong { color:var(--ink); }
+    .notice { margin:1.5rem 0; padding:18px; border:2px solid var(--ember); border-radius:14px; background:#fff5e5; color:var(--ink); }
+    .card { padding:28px; border:1px solid var(--line); background:rgba(255,255,255,.72); box-shadow:0 28px 80px rgba(57,45,23,.11); }
+    footer { margin-top:32px; padding-top:18px; border-top:1px solid var(--line); color:var(--muted); font-size:.88rem; overflow-wrap:anywhere; }
+    code { overflow-wrap:anywhere; }
+  </style>
+</head>
+<body>
+<main>
+  <div class="eyebrow">Icarus · Version 1.0</div>
+  <h1>Privacy policy</h1>
+  <p>Last updated: August 13, 2026</p>
+
+  <div class="card">
+    <h2>Summary</h2>
+    <p>Icarus is designed to work locally without an account or developer backend. The proposed App Store privacy answer is <strong>Data Not Collected</strong>, subject to a final audit of the signed archive, included SDKs, permissions, and runtime network behavior.</p>
+
+    <h2>Data stored on your device</h2>
+    <p>Icarus stores a versioned snapshot in app-scoped iOS preferences. It may include your daily ambition, task titles and priorities, task completion state, focus totals and streak, manually entered city label and coordinates, wake and landing modes, reminder preference, and active or paused focus state.</p>
+    <p>Icarus does not provide its own cloud-sync service. Apple device backup or transfer features may handle app data according to your iOS and Apple account settings.</p>
+
+    <h2>Manual coordinates and solar estimates</h2>
+    <p>Icarus does not request device location in version 1.0. You may manually enter a city label, latitude, and longitude. Those values remain in local app storage and are used to estimate sunrise, sunset, solar phase, and optional reminder times. Solar results are estimates and can be unavailable for some dates or coordinates.</p>
+
+    <h2>Notifications</h2>
+    <p>If you tap Enable alerts, iOS asks for notification permission. When authorized, Icarus submits local wake, midday-focus, and landing reminders to iOS over a rolling seven-day horizon. Notification titles, timing, and the saved reminder preference are processed locally. The developer does not receive notification data.</p>
+    <p>Turning alerts off removes pending Icarus notification requests and stores an off preference. iOS permissions, Focus modes, notification and sound settings, battery state, and device availability can affect delivery. Icarus reminders are not guaranteed alarms or safety-critical alerts.</p>
+
+    <h2>Procedural audio and haptics</h2>
+    <p>Optional white, brown, and rain-like focus noise is generated on the device through an ambient audio session that mixes with other audio. Haptics use local system feedback. The inspected version does not record microphone audio or collect motion information.</p>
+
+    <h2>Storage recovery</h2>
+    <p>If the saved snapshot cannot be decoded, Icarus preserves the unreadable bytes in a recovery entry, shows a notice, and disables changes so uncertain data is not overwritten. The app displays a fresh starter state but remains read-only until you explicitly choose Erase all data. If an ordinary save fails, Icarus restores the prior visible snapshot.</p>
+
+    <h2>History and export</h2>
+    <p>Version 1.0 does not provide a user-facing history or data-export feature. An internal encoder in the source is not accessible from the interface and does not transmit data.</p>
+
+    <h2>Analytics, advertising, AI, and tracking</h2>
+    <p>The inspected source contains no analytics SDK, advertising SDK, tracking, AI generation, developer backend, or app network client. The source privacy manifest declares tracking off and no collected-data categories. These statements must be reconciled with the final signed binary before release.</p>
+
+    <h2>External links</h2>
+    <p>The Rituals data card includes fixed links to this privacy policy and the Icarus support page. Tapping one leaves the app and opens your browser. The website host and browser may process ordinary request information under their own terms. Icarus does not automatically attach your ambition, tasks, coordinates, focus data, or other app content.</p>
+
+    <h2>Your controls</h2>
+    <ul>
+      <li><strong>Reset today</strong> restores the starter ambition/tasks and clears today's focus minutes and ascent count while preserving the documented ritual and streak settings.</li>
+      <li><strong>Turn off alerts</strong> removes pending Icarus notification requests.</li>
+      <li><strong>Erase all data</strong> cancels pending alerts, removes current, legacy, and recovery snapshots, and restores defaults.</li>
+    </ul>
+
+    <h2>Health boundary</h2>
+    <p>Icarus uses sleep, recovery, ascent, and landing as productivity metaphors. It is not medical care, sleep treatment, health monitoring, diagnosis, or emergency support.</p>
+
+    <h2>Contact</h2>
+    <p>Privacy questions: <a href="mailto:jacobegarcia101@gmail.com?subject=Icarus%20Privacy">jacobegarcia101@gmail.com</a>.</p>
+  </div>
+
+  <footer><a href="support.html">Icarus support</a></footer>
+</main>
+</body>
+</html>
